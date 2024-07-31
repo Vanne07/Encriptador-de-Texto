@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-col">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorTexto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img class="imagen_signo_principal" src="./assets/icons8-web-shield-50.png" alt="imagen signo principal">
+        <p><strong>Cifrado Secreto: Mantén tus Mensajes Privados</strong> </p>
+        
+    </header>
+
+    <main class="contenedor">
+
+        <textarea id="Ingrese_texto" class="Ingrese_texto" name="Ingrese_texto" rows="25" cols="40">Ingrese el texto aquí</textarea>
+        
+        <div class="contenedor_signo">
+            <img class="imagen_signo" src="./assets/bi_exclamation-circle-fill.png" alt="imagen signo">
+            <p class="texto_signo">Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="botones">
+            <button onclick="encriptar();" class="boton_encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="boton_desencriptar">Desencriptar</button>
+        </div>
+
+        <div class="texto_salida_imagen">
+            <img class="imagen_muneco" src="./assets/Muñeco.png" alt="imagen muñeco">
+            <p class="texto_imagen1"><strong>Ningún mensaje fue encontrado</strong></p>
+            <p class="texto_imagen2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea class="texto_encriptado" id="texto_encriptado" style="display: none;" rows="28" cols="28"> </textarea> 
+            <button class="copiar" onclick="copiarTexto()" style="display: none;">Copiar</button>  
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <p><strong>Desarrollado por Vannesa Márquez</strong> </p>
+
+    </footer>
+    
+</body>
+</html>
