@@ -161,9 +161,12 @@ body{
 
 .header{
     padding: 10%;
+    font-size: 1.0rem;
+    text-align: center;
   }
 
 .Ingrese_texto {
+    font-size: 1.0rem;
     flex-direction: column; 
     align-items: center; 
     margin-top: 30px;
